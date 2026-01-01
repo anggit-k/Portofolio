@@ -19,3 +19,12 @@ humberger.addEventListener('click', function() {
     humberger.classList.toggle('humberger-active')
     navMenu.classList.toggle('hidden');
 })
+
+//Reset Foem
+const form = document.querySelector("form");
+
+  form.addEventListener("submit", function () {
+    setTimeout(() => {
+      form.reset();
+    }, 500);
+  });
